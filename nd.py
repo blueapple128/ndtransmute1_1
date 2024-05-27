@@ -29,7 +29,7 @@ def screenshot():
   global im
   #run('magick import -window "Crypt of the NecroDancer v4.1.0-b5237" '+SCREEN)
   run('magick import -silent -window "Crypt of the NecroDancer v4.1.0-b5142" '+SCREEN)
-  # TODO sometimes the previous image is opened?!
+  # TODO sometimes the previous image is opened, even after a delay?!
   im = PIL.Image.open(SCREEN)
   if im.width != 640 and im.height != 360:
     assert False, (im.width, im.height)
